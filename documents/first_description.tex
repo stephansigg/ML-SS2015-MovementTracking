@@ -3,6 +3,8 @@
 \usepackage[margin=2cm]{geometry}
 \usepackage[utf8]{inputenc}
 
+\usepackage[sort]{natbib}
+
 \title{Activity prediction via movement sensor}
 \author{Bakhodir Ashirmatov and Benjamin Quack}
 
@@ -14,13 +16,14 @@
 \section{Overview}
 
 Our goal is to predict everyday life activities using a wristband activity tracker equipped 
- with a movement sensor.
+ with a accelerometer.
 We are especially interested in predicting and distinguishing between 
  different computer-related activities.
  
 \section{Sensors and data}
  
-The predictive data consists of the movement information measured at the wrist.
+The predictive data is supposed to consist of the movement information measured at the wrist with
+ a Polar Loop activity tracker \cite{polarloop}.
 Computer-related activities like programming, chatting, text-writing,
  browsing or playing games are to be predicted.
 Those activities can easily be monitored by installing programs on the 
@@ -32,22 +35,22 @@ Since movement sensors are sensitive and different computer-related activities
  we are confident that different activities can be
  successfully predicted and distinguished.
  
- [Insert Picture of devise here]
+% [Insert Picture of devise here]
  
 \section{Novelty}
 
 Some studies have shown that it is possible to distinguish between different 
- activities like sleeping, walking or exercising using movement information [need citation maybe???].
+ activities like sleeping, walking or exercising using movement information 
+ \cite{banosetal2014}.
 However to our knowledge, computer-related activities have not been studied yet, 
- although this might be beneficial.
+ at least not exclusively, as well as only with a wristband device.
   
-% TODO find some literatur
   
 \section{Benefits}
 
-Distinguishing between different computer-related activities is especially 
+Distinguishing between different computer-related activities can be
  useful in a working context. 
-It provides employees and researcher with an easy method to examine 
+It provides employers and researcher with an easy method to examine 
  the different contents included within a particular job, e.g.
  the amount of correspondence versus the amount of coding a programmer 
  spends his time on.
@@ -57,5 +60,7 @@ The predictions could also be used for measuring personal productivity
 % Problem: It might be argued that tracking activity on PC might be sensless 
 % since it is already easy to monitor PC activities via software
 
+\bibliographystyle{plain}
+\bibliography{bib/references.bib}
 
 \end{document}
