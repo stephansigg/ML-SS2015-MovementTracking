@@ -1,0 +1,66 @@
+\documentclass[11pt,a4paper]{paper}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage[sort]{natbib}
+
+\title{Activity prediction via movement sensor}
+\author{Bakhodir Ashirmatov, Benjamin Quack and Qin Zhao}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Overview}
+
+Our goal is to predict everyday life activities using a wristband activity tracker equipped 
+ with a accelerometer.
+We are especially interested in predicting and distinguishing between 
+ different computer-related activities.
+ 
+\section{Sensors and data}
+ 
+The predictive data is supposed to consist of the movement information (mainly accelerometric data) 
+ measured at the wrist.
+Computer-related activities like programming, chatting, text-writing,
+ browsing or playing games are to be predicted.
+Those activities can easily be monitored by installing programs on the 
+ test subjects computer that record the usage and activeness of other 
+ application, e.g. browser, word-processing program, text editor for programming 
+ and so forth.
+Since movement sensors are sensitive and different computer-related activities
+ seem to exhibit different movement patterns along the hand-arm region, 
+ we are confident that different activities can be
+ successfully predicted and distinguished.
+ 
+% [Insert Picture of devise here maybe]
+ 
+\section{Novelty}
+
+Some studies have shown that it is possible to distinguish between different 
+ activities like sleeping, walking or exercising using movement information 
+ \cite{banosetal2014}.
+However to our knowledge, computer-related activities have not been studied yet, 
+ at least not exclusively, as well as only with a wristband device.
+  
+  
+\section{Benefits}
+
+Distinguishing between different computer-related activities can be
+ useful in a working context. 
+It provides employers and researcher with an easy method to examine 
+ the different contents included within a particular job, e.g.
+ the amount of correspondence versus the amount of coding a programmer 
+ spends his time on.
+The predictions could also be used for measuring personal productivity 
+ and preventing procrastination through intervention.
+
+% Problem: It might be argued that tracking activity on PC is sensless 
+% since it is already easy to monitor PC activities via software
+
+\bibliographystyle{plain}
+\bibliography{bib/references.bib}
+
+\end{document}
