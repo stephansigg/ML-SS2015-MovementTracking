@@ -1,0 +1,72 @@
+\documentclass[11pt,a4paper]{paper}
+
+\usepackage[margin=2cm]{geometry}
+\usepackage[utf8]{inputenc}
+
+\usepackage[sort]{natbib}
+
+\title{Activity prediction via movement sensor}
+\author{Bakhodir Ashirmatov, Benjamin Quack and Qin Zhao}
+
+\begin{document}
+
+
+\maketitle
+
+\section{Related work}
+
+A lot of research has already been conducted in the field of human activity recognition via
+ accelerometer sensors and already there are established ways of approaching the corresponding data \cite{bullingetal2014}.
+Usually the so called activity recognition chain has been used to recognizes activities. 
+It comprises data acquisition, signal processing and segmentation, feature extraction and selection,
+ training, and classification.
+Many types of activities have already been studied, mostly regarding sport and fitness activities, household activities (e.g. vacuuming),
+ everyday activities (e.g. reading a newspaper) or the differentiation between different types 
+ of movements (e.g. moving stairs, running, ambulation, laying down) \cite{banosetal2014}.
+However, the specific prediction of and differentiation between computer-related activities have not been studied yet to 
+ our knowledge.
+Only a few studies even include activities like writing on keyboard or typing but only compare those with other non-computer-related 
+ activities like the aforementioned ones.
+These studies are briefly reviewed.
+Also of interested to our project are those studies that assess the possibilities of only using a wristband sensor in comparison 
+ to multiple sensors around the body (ankles, legs, upper arms, shoulder and so forth).
+ 
+A study by Kern, Schiele and Schmidt \cite{kernetal2003} includes activities like sitting, standing, walking, writing on a whiteboard and shaking
+ hands beside typing on a keyboard.
+They apply a Bayesian classifier in order to predict the different activities.
+Sensors on the six locations (knee, ankle, hip, wrist, elbow and shoulder) provide the data.
+Interestingly, typing on a keyboard can be identified fairly well by utilizing only the wrist sensor.
+
+Mannini and colleagues \cite{manninietal2013} studied four main activity classes:
+ sedentary, cycling, ambulation and other activities. 
+Sedentary activities also include two types of computer-related activities, typing and 
+ internet search.
+They use support vector machines for classification. 
+Both computer-related activities can be classified fairly well 
+ belonging to the class of sedentary activities using the sensor 
+ information from the wrist (91.7 \% internet search and 87.9 \% typing).
+However, no results on the differentiation between the two types
+ has been reported.
+
+Another study by Suutala, Pirttikangas and Röning \cite{suutalaetal2007} also 
+ includes typing beside 16 other types of activities. 
+They use four sensors (right thigh and wrist, left wrist and necklace).
+Results specifically addressing the recognition of typing are not provided.
+In contrast to both previous studies, activities were recorded within the
+ natural environment of the participant and not instructed in a laboratory setting.
+ 
+TODO \cite{huynhetal2007}
+
+
+ 
+
+
+ 
+
+
+
+
+\bibliographystyle{plain}
+\bibliography{bib/references.bib}
+
+\end{document}
