@@ -13,24 +13,24 @@
 
 \maketitle
 
-\section{Related work}
+\section*{Related work}
 
 A lot of research has already been conducted in the field of human activity recognition via
- accelerometer sensors and already there are established ways of approaching the corresponding data \cite{bullingetal2014}.
-Usually the so called activity recognition chain has been applied to recognize activities. 
+ accelerometer sensors and there are established ways of approaching the corresponding data \cite{bullingetal2014}.
+Usually the so called activity recognition chain is applied to recognize activities. 
 It comprises data acquisition, signal processing and segmentation, feature extraction and selection,
  training, and classification.
-Many types of activities have already been studied, mostly sport and fitness activities, household activities (e.g. vacuuming),
+Many types of activities have been studied, mostly sport and fitness activities, household activities (e.g. vacuuming),
  everyday activities (e.g. reading a newspaper) or the differentiation between different types 
- of movements (ambulation, e.g. moving stairs, running, laying down) \cite{banosetal2014}.
-However to our knowledge, the specific prediction and differentiation between several computer-related activities have not been studied yet.
-Only a few studies even include activities like writing on keyboard or typing. 
-Also these studies only compare those computer-related activities with non-computer-related 
+ of ambulation (e.g. moving stairs, running, laying down) \cite{banosetal2014}.
+However to our knowledge, the specific prediction and differentiation between several computer-related activities have not been investigated yet.
+Only a few studies do even include activities like writing on keyboard or typing. 
+Also, these studies only compare computer-related activities with non-computer-related 
  activities like the aforementioned ones.
 Some of these articles are briefly reviewed.
  
 A study by Kern, Schiele and Schmidt \cite{kernetal2003} includes activities like sitting, standing, walking, writing on a whiteboard and shaking
- hands beside typing on a keyboard.
+ hands, beside typing on a keyboard.
 They apply a Bayesian classifier in order to predict the different activities.
 Sensors on the six locations (knee, ankle, hip, wrist, elbow and shoulder) provide the data.
 Interestingly, typing on a keyboard can be identified fairly well by utilizing only data from the wrist sensor.
@@ -41,33 +41,33 @@ Sedentary activities also include two types of computer-related activities, typi
  internet search.
 They use support vector machines for classification. 
 Both computer-related activities can be classified fairly well 
- belonging to the class of sedentary activities using the sensor 
+ as belonging to the class of sedentary activities using the sensor 
  information from the wrist (91.7 \% internet search and 87.9 \% typing).
 However, no results on the differentiation between the two types
- has been reported.
+ have been reported.
 
 Suutala, Pirttikangas and Röning \cite{suutalaetal2007} also 
- include typing beside 16 other types of activities. 
-They use four sensors (right thigh and wrist, left wrist and necklace).
+ include typing beside 16 other types of activity. 
+They utilize four sensors (right thigh and wrist, left wrist and necklace).
 Results specifically addressing the recognition of typing are not provided.
 In contrast to both previous studies, activities were recorded within the
- natural environment of the participant and not instructed in a laboratory setting.
+ natural environment of the participants and not instructed in a laboratory setting.
  
 Hu\`{y}nh, Blanke and Schiele \cite{huynhetal2007} examined low-level activities (e.g. brushing teeth,
  taking a shower, sitting) of daily living which could be used to identify high-level activities (e.g. 
- preparing for work) which were recorded within a natural environment.
+ preparing for work) that were recorded within a natural environment.
 Working at a computer was also included as a low-level activity.
-Three sensors were used. On was attached to the right wrist, one to the right-hand side of the hip 
- and one to the right thigh.
+Three sensors were used (right wrist, right-hand side of the hip and right thigh).
 The authors compared different methods of classification: K-means, nearest neighbours, support vector machines and
  Hidden Markov Models.
-Regarding working at a computer, support vectors machines seem to yield the highest precision and recall 
+Regarding working at a computer, support vectors machines seem to yield the highest precision and recall, 
  although this was not the case for the other low-level activities.
  
-In conclusion, there are many studies regarding the identification of daily activity.
+In conclusion, there are many studies regarding the identification of daily activities.
 However, only a few of them include computer-related activities and non attempts to distinguish
  between different computer-related activities like typing, searching on the internet, playing a game or
  writing code in programming language.
+Therefore we feel confident that our project can possibly contribute some new insights.
  
 % actually no wristband
 %Also of interested to our project may be those studies that assess the possibilities of using only a wristband sensor in comparison 
@@ -75,16 +75,6 @@ However, only a few of them include computer-related activities and non attempts
 %However those studies mostly seem to evaluate activities that imply higher energy expenditure (e.g. labour intense 
 % household activities or sport-activities \cite{sasakietal2015}) 
  
- 
-
-
- 
-
-
- 
-
-
-
 
 \bibliographystyle{plain}
 \bibliography{bib/references.bib}
